@@ -5,25 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Church Name — Papua New Guinea</title>
   <meta name="description" content="A warm, God-centered church website template inspired by Papua New Guinea's cultures and colors." />
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header (same on all pages) -->
-  <!-- ...navigation and brand... -->
+  <!-- Header -->
+  <header>
+    <h1>Church Name</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <main id="home" class="hero" aria-labelledby="welcome-title">
-    <!-- Hero content as in your template -->
+    <!-- Welcome Section -->
+    <section>
+      <h2 id="welcome-title">Welcome to Church Name!</h2>
+      <p>
+        We are delighted to welcome you to our community, inspired by the love and unity found in Papua New Guinea’s vibrant cultures. Join us for worship, fellowship, and service as we grow together in faith.
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Church Name is a God-centered congregation dedicated to serving both our members and the wider community. Rooted in tradition yet embracing modern outreach, we offer a place for everyone to belong, learn, and make a positive difference.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or want to connect? Reach out to us!
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:info@churchname.org">info@churchname.org</a></li>
+        <li>Phone: +675 1234 5678</li>
+        <li>Address: Main Street, Port Moresby, Papua New Guinea</li>
+      </ul>
+    </section>
   </main>
 
-  <!-- Quick About, Ministries, Events, Donate, Contact teasers as desired -->
-
-  <!-- Footer (same on all pages) -->
+  <!-- Footer -->
   <footer>
-    <!-- ...footer content... -->
     <div class="copy">© <span id="year"></span> Church Name. All rights reserved.</div>
   </footer>
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
